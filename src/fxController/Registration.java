@@ -102,6 +102,6 @@ public class Registration implements Initializable {
         Stage stage = (Stage) usernameField.getScene().getWindow();
         stage.setTitle("Cargo Transportation System");
         stage.setScene(scene);
-        stage.show();
+        stage.show(); 
     }
 }
