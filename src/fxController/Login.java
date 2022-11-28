@@ -36,12 +36,7 @@ public class Login {
             Parent parent = fxmlLoader.load();
             Main main = fxmlLoader.getController();
             main.setData(entityManagerFactory, user);
-
-            Scene scene = new Scene(parent);
-            Stage stage = (Stage) usernameField.getScene().getWindow();
-            stage.setTitle("Cargo Transportation System");
-            stage.setScene(scene);
-            stage.show();
+            loadNewPage(parent);
         }
         else {
             utils.fxUtils.generateAlert(Alert.AlertType.ERROR, null, "Wrong login details, try again!");
@@ -50,7 +45,12 @@ public class Login {
 
     public void registerLink() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource("../view/registration.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        Parent parent = fxmlLoader.load();
+        loadNewPage(parent);
+    }
+    
+    public void loadNewPage(Parent parent) {
+        Scene scene = new Scene(parent);
         Stage stage = (Stage) usernameField.getScene().getWindow();
         stage.setTitle("Cargo Transportation System");
         stage.setScene(scene);
