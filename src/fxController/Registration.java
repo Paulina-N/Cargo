@@ -21,21 +21,21 @@ import java.util.ResourceBundle;
 
 public class Registration implements Initializable {
     @FXML
-    public TextField nameField;
+    private TextField nameField;
     @FXML
-    public TextField surnameField;
+    private TextField surnameField;
     @FXML
-    public TextField usernameField;
+   private TextField usernameField;
     @FXML
-    public TextField emailField;
+    private TextField emailField;
     @FXML
-    public TextField passwordField;
+   private TextField passwordField;
     @FXML
-    public TextField repeatPasswordField;
+   private TextField repeatPasswordField;
     @FXML
-    public RadioButton driverRadio;
+    private RadioButton driverRadio;
     @FXML
-    public RadioButton managerRadio;
+  private RadioButton managerRadio;
 
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("CargoTransportationsSystem");
     Hibernate hibernate = new Hibernate(entityManagerFactory);
