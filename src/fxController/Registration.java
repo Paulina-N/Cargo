@@ -40,7 +40,7 @@ public class Registration implements Initializable {
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("CargoTransportationsSystem");
     Hibernate hibernate = new Hibernate(entityManagerFactory);
 
-    public void driverAccount() {
+    public void selectedDriver(){
         managerRadio.setSelected(!driverRadio.isSelected());
     }
     public void managerAccount() {
@@ -93,7 +93,7 @@ public class Registration implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        driverAccount();
+        selectedDriver();
     }
 
     public void loginLink() throws IOException {
