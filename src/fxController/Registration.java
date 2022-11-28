@@ -43,7 +43,7 @@ public class Registration implements Initializable {
     public void driverAccount() {
         managerRadio.setSelected(!driverRadio.isSelected());
     }
-    public void managerAccount() {
+    public void selectedManager() {
         driverRadio.setSelected(!managerRadio.isSelected());
     }
 
