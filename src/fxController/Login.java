@@ -17,11 +17,11 @@ import java.io.IOException;
 
 public class Login {
     @FXML
-    public TextField usernameField;
+    private TextField usernameField;
     @FXML
-    public TextField passwordField;
+    private TextField passwordField;
     @FXML
-    public CheckBox managerCheck;
+    private CheckBox managerCheck;
 
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("CargoTransportationsSystem");
     Hibernate hibernate = new Hibernate(entityManagerFactory);
