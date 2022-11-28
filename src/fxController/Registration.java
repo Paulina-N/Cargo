@@ -31,7 +31,7 @@ public class Registration implements Initializable {
     @FXML
     public TextField passwordField;
     @FXML
-    public TextField repeatPasswordField;
+    public TextField repeatPswField;
     @FXML
     public RadioButton driverRadio;
     @FXML
