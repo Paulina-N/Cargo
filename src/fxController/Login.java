@@ -22,6 +22,11 @@ public class Login {
     public TextField passwordField;
     @FXML
     public CheckBox managerCheck;
+    
+    public Login(TextField usernameField, CheckBox managerCheck) {
+        this.usernameField = usernameField;
+        this.managerCheck = managerCheck;
+    }
 
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("CargoTransportationsSystem");
     Hibernate hibernate = new Hibernate(entityManagerFactory);
