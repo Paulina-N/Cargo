@@ -48,7 +48,7 @@ public class Login {
         }
     }
 
-    public void registerLink() throws IOException {
+    public void createNewAccount() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource("../view/registration.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) usernameField.getScene().getWindow();
