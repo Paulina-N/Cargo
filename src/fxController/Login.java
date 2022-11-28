@@ -26,9 +26,6 @@ public class Login {
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("CargoTransportationsSystem");
     Hibernate hibernate = new Hibernate(entityManagerFactory);
 
-    public void isManager() {
-    }
-
     public void loginToAccount() throws IOException {
         User user = hibernate.getUserByLoginData("username", "password", usernameField.getText(), passwordField.getText(), managerCheck.isSelected());
         if (user != null) {
