@@ -72,13 +72,23 @@ public class Registration implements Initializable {
         }
         else {
             if (driverRadio.isSelected()) {
-                Driver driver = new Driver(nameField.getText(), surnameField.getText(),
-                        usernameField.getText(), emailField.getText(), passwordField.getText());
+                Driver driver = new Driver(
+                 nameField.getText(),
+                 surnameField.getText(),
+                 usernameField.getText(),
+                 emailField.getText(), 
+                 passwordField.getText());
+             
                 hibernate.createUser(driver);
             }
             else if (managerRadio.isSelected()) {
-                Manager manager = new Manager(nameField.getText(), surnameField.getText(),
-                        usernameField.getText(), emailField.getText(), passwordField.getText());
+                Manager manager = new Manager(
+                 nameField.getText(),
+                 surnameField.getText(),
+                 usernameField.getText(),
+                 emailField.getText(),
+                 passwordField.getText());
+             
                 hibernate.createUser(manager);
             }
 
